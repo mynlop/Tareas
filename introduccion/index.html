@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estación del Año</title>
+</head>
+<body>
+    
+    <script>
+        function datos(){
+            console.log("18002117 - Mynor Santiago Lopez Sandoval");
+        }
+
+        var mes = 10;
+
+        if(mes >= 3 && mes <= 5 ){
+            console.log("Es primavera");
+            datos();
+        }else if(mes >= 6 && mes <= 8 ){
+            console.log("Es verano");
+            datos();
+        }else if(mes >= 9 && mes <= 11){
+            console.log("Es otoño");
+            datos();
+        }else if(mes == 12 || mes == 1 || mes == 2){
+            console.log("Es invierno")
+            datos();
+        }else{
+            console.log("Este mes es invalido");
+            datos();
+        }
+    </script>
+</body>
+</html>
