@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Version dos - Estaciones del año</title>
+</head>
+<body>
+    <hr>
+    <p>Ingresa el numero de un  mes: </p>
+    <input type="text" id="txtMes" onchange="estacion()" required>
+    <hr>
+    <p style="color: red;" id="txtEstacion">Estaciones del año</p>
+    <hr>
+    <p><strong>18002117 - Mynor Santiago Lopez Sandoval</strong></p>
+    <script>
+    function estacion(){
+        var mes = document.getElementById("txtMes").value;
+
+        if(mes >= 3 && mes <= 5 ){
+            console.log("Es primavera");
+            document.getElementById("txtEstacion").innerHTML = "Primavera";
+        }else if(mes >= 6 && mes <= 8 ){
+            console.log("Es verano");
+            document.getElementById("txtEstacion").innerHTML = "Verano";
+        }else if(mes >= 9 && mes <= 11){
+            console.log("Es otoño");
+            document.getElementById("txtEstacion").innerHTML = "Otoño";
+        }else if(mes == 12 || mes == 1 || mes == 2){
+            console.log("Es invierno");
+            document.getElementById("txtEstacion").innerHTML = "Invierno";
+        }else{
+            console.log("Este mes es invalido");
+            document.getElementById("txtEstacion").innerHTML = "Mes invalido";
+        }
+    }
+    </script>
+    
+</body>
+</html>
